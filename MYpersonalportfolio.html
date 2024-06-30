@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: white;
+        color: black;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: darkgrey;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 23px ;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    nav ul li a:hover{
+color: cadetblue;
+font-size: 1.01rem;
+
+    }
+    .left{
+        font-size: 2.5rem;
+    }
+    .firstsection{
+        display: flex;
+    justify-content: space-around;
+    margin: 85px 0;
+}
+.firstsection > div{
+    width: 34%;
+}
+.leftsection{
+    font-size: 3rem;
+    margin: 90px 0;
+}
+.leftsection .btn{
+    font-size: 20px;
+    padding: 12px;
+    color: red;
+    border: 3px solid purple;
+    background-color: lightsteelblue;
+    cursor: pointer
+
+
+}
+.rightsection{
+    background-color:white;
+    font-size: 2rem;
+    justify-content: space-around;
+}
+.rightsection img{
+    width: 80%;
+    margin: 50x 0;
+    
+}
+.purple{
+    color: blueviolet;
+}
+#element{
+    color: magenta;
+}
+.secondsection{
+    font-size: 1.0rem;
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+main hr{
+    border: 0;
+    background: orangered;
+    height: 0.1rem;
+    margin: 40px 84px;
+}
+.text-gray{
+    color: coral;
+}
+.secondsection h1{
+    font-size: 2.0rem;
+}
+.secondsection .box{
+    background: black;
+    width: 80vw;
+    height: 2px;
+    margin: 56px  0;
+    display: flex;
+}
+.secondsection .vertical{
+    height: 93px;
+    width: 2px;
+    background-color:black ;
+    margin: 0 90px ;
+}
+.verticle-title{
+    position: relative;
+    top: 70px;
+    width: 90px;
+display: flex;
+}
+.vertical-one{
+    top: 91px;
+    position: relative;
+}
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+footer{
+    background-color : gray;
+}
+.footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+.footer ul{
+    list-style: none;
+}
+.footer >div{
+    width: 233px;
+}
+footer .footer-rights{
+    text-align: center;
+    color: brown;
+    padding: 12px 0;
+}
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+    <div class="left">Lokesh's portfolio</div>
+    <ul>
+    
+    <div class="right">
+        <ul>
+            <a href="/"><li>Home</a></li>
+            <a href="/"><li>About</a></li>
+            <a href="/"><li>Service</a></li>
+            <a href="/"><li>project</a></li>
+            <a href="/"><li>contacts</a></li>
+            </ul>
+    </header>
+    <main>
+        <section class="firstsection">
+        <div class="leftsection">
+            Hi, my name is <span class="purple">Lokesh</span>
+        <div>and I am a passionate </div>
+        <span id="element"></span>
+        <div class="buttons">
+            <button class="btn">Download resume</button>
+            <button class="btn">Visit Github</button>
+        </div>
+            </div>
+    <div class="rightsection">
+        <img src="1.png" alt="">
+        
+
+
+        </div>       
+        </section> 
+        <hr>
+       <section class="secondsection">
+        <span class="text-gray">What I have Done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="2.png" alt="">
+                    <div class="verticle-title">
+                    Html developer
+                </div>
+                    <div class="vertical-desc">
+             </div>  
+             </div>
+                <div class="vertical">
+                    <div class="vertical-one">
+                       css
+                </div> 
+                </div>      
+        
+                <div class="vertical">
+                    <div class="vertical-one">
+                        javascript
+                 </div> 
+                </div>
+                <div class="vertical">
+                    <div class="vertical-one">
+                        node.js
+                 </div> 
+                </div>
+                <div class="vertical">      
+                    <div class="vertical-one">
+                    c/c++
+             </div> 
+            </div>
+                </div>
+        </div>
+    </div>
+       </section>
+        </main>
+        <footer>
+            <h3>Lokesh Developer Portfolio</h3>
+            <div class="footer">
+            <div class="footer-first">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>contacts</li>
+
+                </ul>
+         </div>
+            </div>
+                <div class="footer-rights">
+                   copyright &#169; WWW.LOKESHPORTFOLIO.COM| All rights reserved
+                </div>
+        </footer>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ['web developer','graphic designer','database administrator','front end developer'],
+              typeSpeed: 50,
+            });
+          </script>
+   
+</body>
+    
+</body>
+</html>
